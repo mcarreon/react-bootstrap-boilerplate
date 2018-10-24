@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Form = props => {
-    <form {...props}>
+    return <form {...props}>
     
     </form>;
 }

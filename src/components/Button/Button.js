@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Button = props => {
-    <button className="btn" onClick={} />;
+    let addClass = props.addClass;
+    let classes = 'btn';
+    addClass !== undefined ? classes = classes + ' ' + addClass : addClass = '';
+
+    return <button className={classes} onClick={} />;
 }
 
 export default Button;
